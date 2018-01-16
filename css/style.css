@@ -1,0 +1,10 @@
+.flex-container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+body {
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+}
