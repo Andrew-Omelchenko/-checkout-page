@@ -8,3 +8,11 @@
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
+
+#go-back-button {
+	float: left;
+}
+
+#sign-in-button {
+	float: right;
+}

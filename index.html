@@ -8,10 +8,181 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<p>Test <strong>Proxima Nova</strong> font.</p>
-		<p>Test <em>Proxima Nova</em> font.</p>
-		<i class="fa fa-car"></i>
-		<i class="fa fa-car" style="font-size:48px;"></i>
-		<i class="fa fa-car" style="font-size:60px;color:red;"></i>
+<!-- 		<header class="flex-container">
+			<button type="button" id="go-back-button">
+				<i class="fa fa-long-arrow-left fa-fw" aria-hidden="true"></i>&nbsp;
+				GO BACK
+			</button>
+			<button type="button" id="sign-in-button">
+				<i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
+				SIGN IN
+			</button>
+		</header> -->
+		<form action="" method="post">
+			<header>
+				<legend>YOUR ORDER</legend>
+					<fieldset>
+					<legend>YOUR ORDER SUMMARY</legend>
+					<h1>
+						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>&nbsp;
+						YOUR ORDER
+					</h1>
+					<table id="your-order-table">
+						<tr>
+							<th>ITEMS</th>
+							<th>DETAILS</th>
+							<th>PRICE</th>
+							<th>DELIVERY</th>
+						</tr>
+						<tr>
+							<td>2 documents</td>
+							<td>2 languages</td>
+							<td>$696.06</td>
+							<td>48 hours*</td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>ACTIONS, RELATED TO ORDER</legend>
+					<button type="button" id="place-order-button">
+						PLACE ORDER
+					</button>
+					<button type="button" id="print-a-quote-button">
+						PRINT A QUOTE
+					</button>
+				</fieldset>
+				<fieldset>
+					<legend>HELP CENTER</legend>
+					<h1>
+						<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
+						HELP CENTER
+					</h1>
+					<p>
+						If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.
+					</p>
+					<p><span>+971(0)555 555</span>&nbsp;<span>help@qtest.com</span></p>
+				</fieldset>
+			</header>
+			<main>
+				<legend>ACTIONS STEP BY STEP</legend>
+				<fieldset>
+					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
+					<h1>SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<ul>
+					    <li>
+					      <label for="website">Website</label>
+					      <input type="radio" id="website" name="trans-type" value="Website">
+					    </li>
+					    <li>
+					      <label for="documents">Documents</label>
+					      <input type="radio" checked id="documents" name="trans-type" value="Documents">
+					    </li>
+					    <li>
+					      <label for="social-account">Social Account</label>
+					      <input type="radio" id="social-account" name="trans-type" value="Social Account">
+					    </li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>STEP 1</legend>
+					<h1>
+						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span>(Doc, Docx, Text, PDF, Markdown)</span>
+					</h1>
+					<button type="button" id="upload-button">
+						<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
+						Upload a new file
+					</button>
+					<table>
+						<tr>
+							<th>FILE NAME</th>
+							<th>FILE SIZE</th>
+							<th>NUMBER OF WORDS</th>
+							<th>REMOVE</th>
+						</tr>
+						<tr>
+							<th>
+								<i class="fa fa-file-text fa-fw" aria-hidden="true"></i>&nbsp;
+								business_operations.docx
+							</th>
+							<th>78kb</th>
+							<th>842</th>
+							<th>
+								<i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<i class="fa fa-file-text fa-fw" aria-hidden="true"></i>&nbsp;
+								business_financial.docx
+							</th>
+							<th>26kb</th>
+							<th>2,326</th>
+							<th>
+								<i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>STEP 2</legend>
+					<h1>
+						&#9313;&nbsp;Choose your language pairings
+					</h1>
+				</fieldset>
+				<fieldset>
+					<legend>STEP 3</legend>
+					<h1>
+						&#9314;&nbsp;Select your desired tone
+					</h1>
+					<ul>
+					    <li>
+					      <label for="frendly-casual">
+					      	<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
+					      	Frendly/Casual
+					      </label>
+					      <input type="radio" checked id="frendly-casual" name="tone" value="Frendly/Casual">
+					    </li>
+					    <li>
+					      <label for="corporate-pro">
+					      	<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
+					      	Corporate/Pro
+					      </label>
+					      <input type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
+					    </li>
+					    <li>
+					      <label for="media-formal">
+					      	<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
+					      	Media/Formal
+					      </label>
+					      <input type="radio" id="media-formal" name="tone" value="Media/Formal">
+					    </li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>STEP 4</legend>
+					<h1>
+						&#9315;&nbsp;Tell us how urgent this job is
+					</h1>
+					<input type="range" name="urgency" id="urgency" min="0" max="2" step="1">
+				</fieldset>
+				<fieldset>
+					<legend>STEP 5</legend>
+					<h1>
+						&#9316;&nbsp;Sign up and choose a payment method
+					</h1>
+				</fieldset>
+			</main>
+			<footer>
+				<legend>FINAL ACTIONS</legend>
+				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
+				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
+				<button type="button" id="place-order-button-2">
+					PLACE ORDER
+				</button>
+				<button type="button" id="print-a-quote-button-2">
+					PRINT A QUOTE
+				</button>
+			</footer>
+		</form>
 	</body>
 </html>
