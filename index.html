@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-<!-- 		<header class="flex-container">
+		<header class="flex-container">
 			<button type="button" id="go-back-button">
 				<i class="fa fa-long-arrow-left fa-fw" aria-hidden="true"></i>&nbsp;
 				GO BACK
@@ -17,7 +17,7 @@
 				<i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
 				SIGN IN
 			</button>
-		</header> -->
+		</header>
 		<form action="" method="post">
 			<header>
 				<legend>YOUR ORDER</legend>
@@ -68,18 +68,36 @@
 				<fieldset>
 					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
 					<h1>SELECT WHAT YOU WANT TO TRANSLATE</h1>
-					<ul>
-					    <li>
-					      <label for="website">Website</label>
-					      <input type="radio" id="website" name="trans-type" value="Website">
+					<ul style="list-style: none;">
+					    <li class="image-radio padded">
+					    	<label for="website">
+					    		<input type="radio" id="website" name="trans-type" value="Website">
+					    		<div>
+					    			<img class="corner top-right" src="img/check.png">
+					    			<img src="img/website.png">
+					    			<p>Website</p>
+					    		</div>
+					    	</label>
 					    </li>
-					    <li>
-					      <label for="documents">Documents</label>
-					      <input type="radio" checked id="documents" name="trans-type" value="Documents">
+					    <li class="image-radio padded">
+					    	<label for="documents">
+					      		<input type="radio" checked id="documents" name="trans-type" value="Documents">
+					      		<div>
+					      			<img class="corner top-right" src="img/check.png">
+					      			<img src="img/documents.png">
+					      			<p>Documents</p>
+					      		</div>
+					      	</label>
 					    </li>
-					    <li>
-					      <label for="social-account">Social Account</label>
-					      <input type="radio" id="social-account" name="trans-type" value="Social Account">
+					    <li class="image-radio padded">
+					      	<label for="social-account">
+					      		<input type="radio" id="social-account" name="trans-type" value="Social Account">
+					      		<div>
+					      			<img class="corner top-right" src="img/check.png">
+					      			<img src="img/social-account.png">
+					      			<p>Social Account</p>
+					      		</div>
+					    	</label>
 					    </li>
 					</ul>
 				</fieldset>
@@ -134,7 +152,7 @@
 					<h1>
 						&#9314;&nbsp;Select your desired tone
 					</h1>
-					<ul>
+					<ul style="list-style: none;">
 					    <li>
 					      <label for="frendly-casual">
 					      	<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;

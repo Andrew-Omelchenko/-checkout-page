@@ -16,3 +16,53 @@ body {
 #sign-in-button {
 	float: right;
 }
+
+.image-radio div {
+	width: 25%;
+}
+
+/* Hide radio */
+.image-radio label input[type="radio"] {
+	display: none;
+}
+
+.image-radio label > input[type="radio"]:checked + div {
+	position: relative;
+	border: 5px solid #417fff;
+}
+
+.image-radio label > input[type="radio"]:unchecked + div {
+	position: relative;
+	border: 5px solid transparent;
+}
+
+/* Styles for checked borders */
+
+.padded {
+	padding: 20px;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+/*.check {
+	background: #cfcfcf;
+	width: 300px;
+	height: 200px;
+	position: relative;
+	border: 5px solid #417fff;
+}*/
+
+.corner {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+}
+
+.top-right {
+	top: -10px;
+	right: -10px;
+}
+
