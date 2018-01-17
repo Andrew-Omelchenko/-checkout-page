@@ -5,8 +5,90 @@
 	justify-content: space-between;
 }
 
+legend {
+	width: 1px;
+	display: none;
+}
+
+@media screen and (max-width: 799px) {
+	.flex-container {
+		width: 800px;
+	}
+	.summary {
+		width: 30%;
+	}
+	.summary-action {
+		width: 15%;
+	}
+	.help-center {
+		width: 30%;
+	}
+	.step-by-step {
+		width: 100%;
+	}
+	.step-1 {
+		width: 100%;
+	}
+	.step-2 {
+		width: 100%;
+	}
+	.step-3 {
+		width: 30%;
+	}
+	.step-4 {
+		width: 50%;
+	}
+	.step-5 {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.flex-container {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.summary {
+		width: 30%;
+	}
+	.summary-action {
+		width: 15%;
+	}
+	.help-center {
+		width: 30%;
+	}
+	.step-by-step {
+		width: 100%;
+	}
+	.step-1 {
+		width: 100%;
+	}
+	.step-2 {
+		width: 100%;
+	}
+	.step-3 {
+		width: 30%;
+	}
+	.step-4 {
+		width: 50%;
+	}
+	.step-5 {
+		width: 100%;
+	}
+}
+
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
+    background: lightgray;
+}
+
+form {
+	background: white;
+}
+
+h1 {
+	font-size: 21px;
 }
 
 #go-back-button {
@@ -17,42 +99,49 @@ body {
 	float: right;
 }
 
-.image-radio div {
-	width: 25%;
+.justify {
+	text-align: center;
+}
+
+.button {
+	height: 42px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.image-radio {
+	width: 30%;
+}
+
+.tile {
+	width: 50%;
 }
 
 /* Hide radio */
-.image-radio label input[type="radio"] {
+input[type="radio"] {
 	display: none;
 }
 
-.image-radio label > input[type="radio"]:checked + div {
+input[type="radio"]:checked + div {
 	position: relative;
 	border: 5px solid #417fff;
 }
 
-.image-radio label > input[type="radio"]:unchecked + div {
+input[type="radio"]:unchecked + div {
 	position: relative;
 	border: 5px solid transparent;
 }
 
+
 /* Styles for checked borders */
 
 .padded {
-	padding: 20px;
+	padding: 10px;
 }
 
 .hidden {
-	opacity: 0;
+	display: none;
 }
-
-/*.check {
-	background: #cfcfcf;
-	width: 300px;
-	height: 200px;
-	position: relative;
-	border: 5px solid #417fff;
-}*/
 
 .corner {
 	position: absolute;

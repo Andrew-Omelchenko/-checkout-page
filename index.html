@@ -9,19 +9,19 @@
 	</head>
 	<body>
 		<header class="flex-container">
-			<button type="button" id="go-back-button">
+			<button type="button" id="go-back-button" class="button">
 				<i class="fa fa-long-arrow-left fa-fw" aria-hidden="true"></i>&nbsp;
 				GO BACK
 			</button>
-			<button type="button" id="sign-in-button">
+			<button type="button" id="sign-in-button" class="button">
 				<i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
 				SIGN IN
 			</button>
 		</header>
 		<form action="" method="post">
-			<header>
+			<header class="flex-container">
 				<legend>YOUR ORDER</legend>
-					<fieldset>
+					<fieldset class="summary">
 					<legend>YOUR ORDER SUMMARY</legend>
 					<h1>
 						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>&nbsp;
@@ -42,69 +42,70 @@
 						</tr>
 					</table>
 				</fieldset>
-				<fieldset>
+				<fieldset class="summary-action">
 					<legend>ACTIONS, RELATED TO ORDER</legend>
-					<button type="button" id="place-order-button">
+					<button type="button" id="place-order-button" class="button">
 						PLACE ORDER
 					</button>
-					<button type="button" id="print-a-quote-button">
-						PRINT A QUOTE
+					<p></p>
+					<button type="button" id="print-a-quote-button" class="button">
+							PRINT A QUOTE
 					</button>
 				</fieldset>
-				<fieldset>
+				<fieldset class="help-center">
 					<legend>HELP CENTER</legend>
 					<h1>
 						<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
 						HELP CENTER
 					</h1>
-					<p>
+					<p style="text-align: justify;">
 						If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.
 					</p>
 					<p><span>+971(0)555 555</span>&nbsp;<span>help@qtest.com</span></p>
 				</fieldset>
 			</header>
-			<main>
+			<main class="flex-container">
 				<legend>ACTIONS STEP BY STEP</legend>
-				<fieldset>
+				<fieldset class="step-by-step">
 					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
-					<h1>SELECT WHAT YOU WANT TO TRANSLATE</h1>
-					<ul style="list-style: none;">
-					    <li class="image-radio padded">
+					<h1 class="justify">SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<div class="flex-container" style="width: 80%; justify-content: space-around;">
+					    <div class="image-radio padded">
 					    	<label for="website">
 					    		<input type="radio" id="website" name="trans-type" value="Website">
-					    		<div>
+					    		<div class="justify">
 					    			<img class="corner top-right" src="img/check.png">
-					    			<img src="img/website.png">
+					    			<img src="img/website.png" class="tile">
 					    			<p>Website</p>
 					    		</div>
 					    	</label>
-					    </li>
-					    <li class="image-radio padded">
+					    </div>
+					    <div class="image-radio padded">
 					    	<label for="documents">
 					      		<input type="radio" checked id="documents" name="trans-type" value="Documents">
-					      		<div>
+					      		<div class="justify">
 					      			<img class="corner top-right" src="img/check.png">
-					      			<img src="img/documents.png">
+					      			<img src="img/documents.png" class="tile">
 					      			<p>Documents</p>
 					      		</div>
 					      	</label>
-					    </li>
-					    <li class="image-radio padded">
+					    </div>
+					    <div class="image-radio padded">
 					      	<label for="social-account">
 					      		<input type="radio" id="social-account" name="trans-type" value="Social Account">
-					      		<div>
+					      		<div class="justify">
 					      			<img class="corner top-right" src="img/check.png">
-					      			<img src="img/social-account.png">
+					      			<img src="img/social-account.png" class="tile">
 					      			<p>Social Account</p>
 					      		</div>
 					    	</label>
-					    </li>
-					</ul>
+					    </div>
+					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="step-1">
 					<legend>STEP 1</legend>
 					<h1>
-						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span>(Doc, Docx, Text, PDF, Markdown)</span>
+						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span><small>(Doc, Docx, Text, PDF, Markdown)</small></span>
 					</h1>
 					<button type="button" id="upload-button">
 						<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
@@ -141,56 +142,65 @@
 						</tr>
 					</table>
 				</fieldset>
-				<fieldset>
+				<fieldset class="step-2">
 					<legend>STEP 2</legend>
 					<h1>
 						&#9313;&nbsp;Choose your language pairings
 					</h1>
 				</fieldset>
-				<fieldset>
+				<fieldset class="step-3">
 					<legend>STEP 3</legend>
 					<h1>
 						&#9314;&nbsp;Select your desired tone
 					</h1>
 					<ul style="list-style: none;">
-					    <li>
-					      <label for="frendly-casual">
-					      	<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
-					      	Frendly/Casual
-					      </label>
-					      <input type="radio" checked id="frendly-casual" name="tone" value="Frendly/Casual">
+					    <li class="padded">
+					    	<label for="frendly-casual">
+					      		<input type="radio" checked id="frendly-casual" name="tone" value="Frendly/Casual">
+					      		<div class="button">
+					      			<img class="corner top-right" src="img/check.png">
+					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
+						      		Frendly/Casual
+					      		</div>
+						    </label>
 					    </li>
-					    <li>
-					      <label for="corporate-pro">
-					      	<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
-					      	Corporate/Pro
-					      </label>
-					      <input type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
+					    <li class="padded">
+					    	<label for="corporate-pro">
+					      		<input type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
+					      		<div class="button">
+					      			<img class="corner top-right" src="img/check.png">
+					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
+					      			Corporate/Pro
+					      		</div>
+						    </label>
 					    </li>
-					    <li>
-					      <label for="media-formal">
-					      	<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
-					      	Media/Formal
-					      </label>
-					      <input type="radio" id="media-formal" name="tone" value="Media/Formal">
+					    <li class="padded">
+					    	<label for="media-formal">
+					      		<input type="radio" id="media-formal" name="tone" value="Media/Formal">
+					      		<div class="button">
+					      			<img class="corner top-right" src="img/check.png">
+					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
+					      			Media/Formal
+					      		</div>
+						    </label>
 					    </li>
 					</ul>
 				</fieldset>
-				<fieldset>
+				<fieldset class="step-4">
 					<legend>STEP 4</legend>
 					<h1>
 						&#9315;&nbsp;Tell us how urgent this job is
 					</h1>
 					<input type="range" name="urgency" id="urgency" min="0" max="2" step="1">
 				</fieldset>
-				<fieldset>
+				<fieldset class="step-5">
 					<legend>STEP 5</legend>
 					<h1>
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
 				</fieldset>
 			</main>
-			<footer>
+			<footer class="flex-container">
 				<legend>FINAL ACTIONS</legend>
 				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
 				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
@@ -202,5 +212,6 @@
 				</button>
 			</footer>
 		</form>
+		<footer class="flex-container"></footer>
 	</body>
 </html>
