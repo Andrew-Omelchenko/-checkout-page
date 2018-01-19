@@ -244,7 +244,26 @@
 					<h1>
 						&#9315;&nbsp;Tell us how urgent this job is
 					</h1>
-					<input required type="range" name="urgency" id="urgency" min=0 max=2 step=1 value=1>
+					<div style="display: flex; flex-flow: row wrap; justify-content: space-around;">
+						<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 80%;">
+							<div class="padded" style="width: 100%;">
+								<input required type="range" name="urgency" id="urgency" min=0 max=2 step=1 value=1>
+							</div>
+							<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 100%; padding-bottom: 20px;">
+								<span>I GOT TIME</span><span class="orange">AVERAGE</span><span>YESTERDAY</span>
+							</div>
+						</div>
+						<div class="box">
+							<legend>TIMELINE INFO</legend>
+							<h2>
+								<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
+								TIMELINE INFO
+							</h2>
+							<p style="text-align: justify;">
+								With an <span class="orange">AVERAGE</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation
+							</p>
+						</div>
+					</div>
 				</fieldset>
 				<fieldset class="step-5">
 					<legend>STEP 5</legend>
@@ -257,10 +276,10 @@
 				<legend>FINAL ACTIONS</legend>
 				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
 				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
-				<button type="button" id="place-order-button-2">
+				<button type="button" class="button" id="place-order-button-2">
 					PLACE ORDER
 				</button>
-				<button type="button" id="print-a-quote-button-2">
+				<button type="button" class="button" id="print-a-quote-button-2">
 					PRINT A QUOTE
 				</button>
 			</section>
