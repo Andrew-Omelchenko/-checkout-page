@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="fonts/awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="fonts/proxima/fonts.min.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>CHECKOUT PAGE</title>
 	</head>
 	<body>
 		<header class="flex-container">
@@ -18,8 +20,8 @@
 				SIGN IN
 			</button>
 		</header>
-		<form action="" method="post">
-			<header class="flex-container">
+		<form action="" method="post" class="flex-container">
+			<section class="flex-container">
 				<legend>YOUR ORDER</legend>
 					<fieldset class="summary">
 					<legend>YOUR ORDER SUMMARY</legend>
@@ -61,19 +63,23 @@
 					<p style="text-align: justify;">
 						If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.
 					</p>
-					<p><span>+971(0)555 555</span>&nbsp;<span>help@qtest.com</span></p>
+					<address>
+						<a href="tel:+971(0)555 555">+971(0)555 555</a>
+						<a href="mailto:help@qtest.com">help@qtest.com</a>
+					</address>
 				</fieldset>
-			</header>
-			<main class="flex-container">
+			</section>
+			<section class="flex-container">
 				<legend>ACTIONS STEP BY STEP</legend>
 				<fieldset class="step-by-step">
 					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
-					<h1 class="justify">SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<h1 class="center">SELECT WHAT YOU WANT TO TRANSLATE</h1>
 					<div class="flex-container" style="width: 80%; justify-content: space-around;">
 					    <div class="image-radio padded">
 					    	<label for="website">
 					    		<input type="radio" id="website" name="trans-type" value="Website">
-					    		<div class="justify">
+					    		<div class="center">
+					    			<p></p>
 					    			<img class="corner top-right" src="img/check.png">
 					    			<img src="img/website.png" class="tile">
 					    			<p>Website</p>
@@ -83,7 +89,8 @@
 					    <div class="image-radio padded">
 					    	<label for="documents">
 					      		<input type="radio" checked id="documents" name="trans-type" value="Documents">
-					      		<div class="justify">
+					      		<div class="center">
+					      			<p></p>
 					      			<img class="corner top-right" src="img/check.png">
 					      			<img src="img/documents.png" class="tile">
 					      			<p>Documents</p>
@@ -93,7 +100,8 @@
 					    <div class="image-radio padded">
 					      	<label for="social-account">
 					      		<input type="radio" id="social-account" name="trans-type" value="Social Account">
-					      		<div class="justify">
+					      		<div class="center">
+					      			<p></p>
 					      			<img class="corner top-right" src="img/check.png">
 					      			<img src="img/social-account.png" class="tile">
 					      			<p>Social Account</p>
@@ -199,8 +207,8 @@
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
 				</fieldset>
-			</main>
-			<footer class="flex-container">
+			</section>
+			<section class="flex-container">
 				<legend>FINAL ACTIONS</legend>
 				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
 				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
@@ -210,7 +218,7 @@
 				<button type="button" id="print-a-quote-button-2">
 					PRINT A QUOTE
 				</button>
-			</footer>
+			</section>
 		</form>
 		<footer class="flex-container"></footer>
 	</body>

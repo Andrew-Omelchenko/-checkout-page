@@ -1,21 +1,27 @@
 .flex-container {
-	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
-legend {
+legend{
+	margin-bottom:-10px;
 	width: 1px;
 	display: none;
 }
+
+fieldset {
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
 
 @media screen and (max-width: 799px) {
 	.flex-container {
 		width: 800px;
 	}
 	.summary {
-		width: 30%;
+		flex-grow: 100%;
 	}
 	.summary-action {
 		width: 15%;
@@ -33,10 +39,10 @@ legend {
 		width: 100%;
 	}
 	.step-3 {
-		width: 30%;
+		flex-grow: 100%;
 	}
 	.step-4 {
-		width: 50%;
+		width: 60%;
 	}
 	.step-5 {
 		width: 100%;
@@ -50,7 +56,7 @@ legend {
 		margin-right: auto;
 	}
 	.summary {
-		width: 30%;
+		flex-grow: 100%;
 	}
 	.summary-action {
 		width: 15%;
@@ -68,10 +74,10 @@ legend {
 		width: 100%;
 	}
 	.step-3 {
-		width: 30%;
+		flex-grow: 100%;
 	}
 	.step-4 {
-		width: 50%;
+		width: 60%;
 	}
 	.step-5 {
 		width: 100%;
@@ -91,15 +97,15 @@ h1 {
 	font-size: 21px;
 }
 
-#go-back-button {
+/*#go-back-button {
 	float: left;
 }
 
 #sign-in-button {
 	float: right;
-}
+}*/
 
-.justify {
+.center {
 	text-align: center;
 }
 
