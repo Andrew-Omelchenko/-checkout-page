@@ -73,10 +73,18 @@
 				<legend>ACTIONS STEP BY STEP</legend>
 				<fieldset class="step-by-step">
 					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
-					<h1 class="center">SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<h1 class="center padded">SELECT WHAT YOU WANT TO TRANSLATE</h1>
 					<div class="flex-container" style="width: 80%; justify-content: space-around;">
-					    <div class="image-radio padded">
-					    	<label for="website">
+					    <div class="image-radio">
+					    	<label for="website" class="select-type">
+					    		<input required hidden type="radio" id="website" name="trans-type" value="Website">
+					    		<div class="select-wrapper center">
+					    			<p></p>
+					    			<img src="img/website.png" class="select-img tile">
+					    			<p>Website</p>
+					    		</div>
+					    	</label>
+					    	<!-- <label for="website">
 					    		<input type="radio" id="website" name="trans-type" value="Website">
 					    		<div class="center">
 					    			<p></p>
@@ -84,10 +92,18 @@
 					    			<img src="img/website.png" class="tile">
 					    			<p>Website</p>
 					    		</div>
-					    	</label>
+					    	</label> -->
 					    </div>
-					    <div class="image-radio padded">
-					    	<label for="documents">
+					    <div class="image-radio">
+					    	<label for="documents" class="select-type">
+					    		<input required hidden checked type="radio" id="documents" name="trans-type" value="Documents">
+					    		<div class="select-wrapper center">
+					    			<p></p>
+					    			<img src="img/documents.png" class="select-img tile">
+					    			<p>Documents</p>
+					    		</div>
+					    	</label>
+					    	<!-- <label for="documents">
 					      		<input type="radio" checked id="documents" name="trans-type" value="Documents">
 					      		<div class="center">
 					      			<p></p>
@@ -95,10 +111,18 @@
 					      			<img src="img/documents.png" class="tile">
 					      			<p>Documents</p>
 					      		</div>
-					      	</label>
+					      	</label> -->
 					    </div>
-					    <div class="image-radio padded">
-					      	<label for="social-account">
+					    <div class="image-radio">
+					    	<label for="social-account" class="select-type">
+					    		<input required hidden type="radio" id="social-account" name="trans-type" value="Social Account">
+					    		<div class="select-wrapper center">
+					    			<p></p>
+					    			<img src="img/social-account.png" class="select-img tile">
+					    			<p>Social Account</p>
+					    		</div>
+					    	</label>
+					      	<!-- <label for="social-account">
 					      		<input type="radio" id="social-account" name="trans-type" value="Social Account">
 					      		<div class="center">
 					      			<p></p>
@@ -106,7 +130,7 @@
 					      			<img src="img/social-account.png" class="tile">
 					      			<p>Social Account</p>
 					      		</div>
-					    	</label>
+					    	</label> -->
 					    </div>
 					</div>
 				</fieldset>
@@ -163,34 +187,55 @@
 					</h1>
 					<ul style="list-style: none;">
 					    <li class="padded">
-					    	<label for="frendly-casual">
+					    	<label for="frendly-casual" class="select-type">
+					      		<input required hidden checked type="radio" id="frendly-casual" name="tone" value="Frendly/Casual">
+					      		<div class="select-wrapper">
+					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
+						      		Frendly/Casual
+					      		</div>
+						    </label>
+					    	<!-- <label for="frendly-casual">
 					      		<input type="radio" checked id="frendly-casual" name="tone" value="Frendly/Casual">
 					      		<div class="button">
 					      			<img class="corner top-right" src="img/check.png">
 					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
 						      		Frendly/Casual
 					      		</div>
-						    </label>
+						    </label> -->
 					    </li>
 					    <li class="padded">
-					    	<label for="corporate-pro">
+					    	<label for="corporate-pro" class="select-type">
+					      		<input required hidden type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
+					      		<div class="select-wrapper">
+					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
+					      			Corporate/Pro
+					      		</div>
+						    </label>
+					    	<!-- <label for="corporate-pro">
 					      		<input type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
 					      		<div class="button">
 					      			<img class="corner top-right" src="img/check.png">
 					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Corporate/Pro
 					      		</div>
-						    </label>
+						    </label> -->
 					    </li>
 					    <li class="padded">
-					    	<label for="media-formal">
+					    	<label for="media-formal"  class="select-type">
+					      		<input required hidden type="radio" id="media-formal" name="tone" value="Media/Formal">
+					      		<div class="select-wrapper">
+					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
+					      			Media/Formal
+					      		</div>
+						    </label>
+					    	<!-- <label for="media-formal">
 					      		<input type="radio" id="media-formal" name="tone" value="Media/Formal">
 					      		<div class="button">
 					      			<img class="corner top-right" src="img/check.png">
 					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Media/Formal
 					      		</div>
-						    </label>
+						    </label> -->
 					    </li>
 					</ul>
 				</fieldset>
