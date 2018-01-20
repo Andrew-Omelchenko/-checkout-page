@@ -25,11 +25,11 @@
 				<legend>YOUR ORDER</legend>
 					<fieldset class="summary">
 					<legend>YOUR ORDER SUMMARY</legend>
-					<h1>
+					<h1 class="padded">
 						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>&nbsp;
 						YOUR ORDER
 					</h1>
-					<table id="your-order-table">
+					<table id="your-order-table" class="padded tabbed">
 						<tr>
 							<th>ITEMS</th>
 							<th>DETAILS</th>
@@ -46,7 +46,7 @@
 				</fieldset>
 				<fieldset class="summary-action">
 					<legend>ACTIONS, RELATED TO ORDER</legend>
-					<button type="button" id="place-order-button" class="button">
+					<button type="button" id="place-order-button" class="button submit" style="margin-top: 10px; margin-bottom: 20px;">
 						PLACE ORDER
 					</button>
 					<p></p>
@@ -56,14 +56,14 @@
 				</fieldset>
 				<fieldset class="help-center">
 					<legend>HELP CENTER</legend>
-					<h1>
+					<h1 class="padded">
 						<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
 						HELP CENTER
 					</h1>
-					<p style="text-align: justify;">
+					<p class="padded tabbed" style="text-align: justify;">
 						If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.
 					</p>
-					<address>
+					<address class="padded tabbed">
 						<a href="tel:+971(0)555 555">+971(0)555 555</a>
 						<a href="mailto:help@qtest.com">help@qtest.com</a>
 					</address>
@@ -73,7 +73,7 @@
 				<legend>ACTIONS STEP BY STEP</legend>
 				<fieldset class="step-by-step">
 					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
-					<h1 class="center padded">SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<h1 class="center padded" style="margin-bottom: 20px;">SELECT WHAT YOU WANT TO TRANSLATE</h1>
 					<div class="flex-container" style="width: 80%; justify-content: space-around;">
 					    <div class="image-radio">
 					    	<label for="website" class="select-type">
@@ -136,14 +136,14 @@
 				</fieldset>
 				<fieldset class="step-1">
 					<legend>STEP 1</legend>
-					<h1>
+					<h1 class="padded">
 						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span><small>(Doc, Docx, Text, PDF, Markdown)</small></span>
 					</h1>
-					<button type="button" id="upload-button">
+					<button type="button" id="upload-button" class="button tabbed" style="margin-bottom: 20px; width: 210px;">
 						<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
 						Upload a new file
 					</button>
-					<table>
+					<table class="thin-border tabbed">
 						<tr>
 							<th>FILE NAME</th>
 							<th>FILE SIZE</th>
@@ -151,15 +151,15 @@
 							<th>REMOVE</th>
 						</tr>
 						<tr>
-							<th>
+							<td>
 								<i class="fa fa-file-text fa-fw" aria-hidden="true"></i>&nbsp;
 								business_operations.docx
-							</th>
-							<th>78kb</th>
-							<th>842</th>
-							<th>
+							</td>
+							<td>78kb</td>
+							<td>842</td>
+							<td>
 								<i class="fa fa-trash fa-fw" aria-hidden="true"></i>
-							</th>
+							</td>
 						</tr>
 						<tr>
 							<th>
@@ -176,20 +176,20 @@
 				</fieldset>
 				<fieldset class="step-2">
 					<legend>STEP 2</legend>
-					<h1>
+					<h1 class="padded">
 						&#9313;&nbsp;Choose your language pairings
 					</h1>
 				</fieldset>
 				<fieldset class="step-3">
 					<legend>STEP 3</legend>
-					<h1>
+					<h1 class="padded">
 						&#9314;&nbsp;Select your desired tone
 					</h1>
-					<ul style="list-style: none;">
+					<ul class="tabbed" style="list-style: none;">
 					    <li class="padded">
 					    	<label for="frendly-casual" class="select-type">
 					      		<input required hidden checked type="radio" id="frendly-casual" name="tone" value="Frendly/Casual">
-					      		<div class="select-wrapper">
+					      		<div class="select-wrapper" style="padding: 14px;">
 					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
 						      		Frendly/Casual
 					      		</div>
@@ -206,7 +206,7 @@
 					    <li class="padded">
 					    	<label for="corporate-pro" class="select-type">
 					      		<input required hidden type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
-					      		<div class="select-wrapper">
+					      		<div class="select-wrapper" style="padding: 14px;">
 					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Corporate/Pro
 					      		</div>
@@ -223,7 +223,7 @@
 					    <li class="padded">
 					    	<label for="media-formal"  class="select-type">
 					      		<input required hidden type="radio" id="media-formal" name="tone" value="Media/Formal">
-					      		<div class="select-wrapper">
+					      		<div class="select-wrapper" style="padding: 14px;">
 					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Media/Formal
 					      		</div>
@@ -241,7 +241,7 @@
 				</fieldset>
 				<fieldset class="step-4">
 					<legend>STEP 4</legend>
-					<h1>
+					<h1 class="padded">
 						&#9315;&nbsp;Tell us how urgent this job is
 					</h1>
 					<div style="display: flex; flex-flow: row wrap; justify-content: space-around;">
@@ -267,7 +267,7 @@
 				</fieldset>
 				<fieldset class="step-5">
 					<legend>STEP 5</legend>
-					<h1>
+					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
 				</fieldset>
@@ -276,7 +276,7 @@
 				<legend>FINAL ACTIONS</legend>
 				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
 				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
-				<button type="button" class="button" id="place-order-button-2">
+				<button type="button" class="button submit" id="place-order-button-2">
 					PLACE ORDER
 				</button>
 				<button type="button" class="button" id="print-a-quote-button-2">
