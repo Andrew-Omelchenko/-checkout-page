@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="fonts/awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="fonts/proxima/fonts.min.css">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/reset2.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>CHECKOUT PAGE</title>
 	</head>
@@ -23,9 +23,9 @@
 		</header>
 		<form action="" method="post" class="flex-container">
 			<section class="flex-container">
-				<legend>YOUR ORDER</legend>
+				<!-- <legend>YOUR ORDER</legend> -->
 					<fieldset class="summary">
-					<legend>YOUR ORDER SUMMARY</legend>
+					<!-- <legend>YOUR ORDER SUMMARY</legend> -->
 					<h1 class="padded">
 						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>&nbsp;
 						YOUR ORDER
@@ -46,17 +46,16 @@
 					</table>
 				</fieldset>
 				<fieldset class="summary-action">
-					<legend>ACTIONS, RELATED TO ORDER</legend>
-					<button type="button" id="place-order-button" class="button submit" style="margin-top: 10px; margin-bottom: 20px;">
+					<!-- <legend>YOUR ORDER ACTIONS</legend> -->
+					<button type="button" id="place-order-button" class="button submit" style="margin-bottom: 21px;">
 						PLACE ORDER
 					</button>
-					<p></p>
-					<button type="button" id="print-a-quote-button" class="button">
+					<button type="button" id="print-a-quote-button" class="button form-button">
 							PRINT A QUOTE
 					</button>
 				</fieldset>
 				<fieldset class="help-center">
-					<legend>HELP CENTER</legend>
+					<!-- <legend>HELP CENTER</legend> -->
 					<h1 class="padded">
 						<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
 						HELP CENTER
@@ -71,11 +70,11 @@
 				</fieldset>
 			</section>
 			<section class="flex-container">
-				<legend>ACTIONS STEP BY STEP</legend>
+				<!-- <legend>ACTIONS STEP BY STEP</legend> -->
 				<fieldset class="step-by-step">
-					<legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
+					<!-- <legend>SELECT WHAT YOU WANT TO TRANSLATE</legend> -->
 					<h1 class="center padded" style="margin-bottom: 20px;">SELECT WHAT YOU WANT TO TRANSLATE</h1>
-					<div class="flex-container" style="width: 80%; justify-content: space-around;">
+					<div class="flex-container" style="justify-content: space-around;">
 					    <div class="image-radio">
 					    	<label for="website" class="select-type">
 					    		<input required hidden type="radio" id="website" name="trans-type" value="Website">
@@ -85,15 +84,6 @@
 					    			<p>Website</p>
 					    		</div>
 					    	</label>
-					    	<!-- <label for="website">
-					    		<input type="radio" id="website" name="trans-type" value="Website">
-					    		<div class="center">
-					    			<p></p>
-					    			<img class="corner top-right" src="img/check.png">
-					    			<img src="img/website.png" class="tile">
-					    			<p>Website</p>
-					    		</div>
-					    	</label> -->
 					    </div>
 					    <div class="image-radio">
 					    	<label for="documents" class="select-type">
@@ -104,15 +94,6 @@
 					    			<p>Documents</p>
 					    		</div>
 					    	</label>
-					    	<!-- <label for="documents">
-					      		<input type="radio" checked id="documents" name="trans-type" value="Documents">
-					      		<div class="center">
-					      			<p></p>
-					      			<img class="corner top-right" src="img/check.png">
-					      			<img src="img/documents.png" class="tile">
-					      			<p>Documents</p>
-					      		</div>
-					      	</label> -->
 					    </div>
 					    <div class="image-radio">
 					    	<label for="social-account" class="select-type">
@@ -123,27 +104,19 @@
 					    			<p>Social Account</p>
 					    		</div>
 					    	</label>
-					      	<!-- <label for="social-account">
-					      		<input type="radio" id="social-account" name="trans-type" value="Social Account">
-					      		<div class="center">
-					      			<p></p>
-					      			<img class="corner top-right" src="img/check.png">
-					      			<img src="img/social-account.png" class="tile">
-					      			<p>Social Account</p>
-					      		</div>
-					    	</label> -->
 					    </div>
 					</div>
 				</fieldset>
 				<fieldset class="step-1">
-					<legend>STEP 1</legend>
+					<!-- <legend>STEP 1</legend> -->
 					<h1 class="padded">
 						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span><small>(Doc, Docx, Text, PDF, Markdown)</small></span>
 					</h1>
-					<button type="button" id="upload-button" class="button tabbed" style="margin-bottom: 20px; width: 210px;">
-						<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
-						Upload a new file
-					</button>
+					<div class="upload-wrapper button form-button tabbed">
+						<input type="file" id="upload-button" name="upload-button" style="margin-bottom: 20px;">
+                        <i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
+                        Upload a new file 
+                    </div>
 					<table class="thin-border tabbed">
 						<tr>
 							<th>FILE NAME</th>
@@ -176,7 +149,7 @@
 					</table>
 				</fieldset>
 				<fieldset class="step-2">
-					<legend>STEP 2</legend>
+					<!-- <legend>STEP 2</legend> -->
 					<h1 class="padded">
 						&#9313;&nbsp;Choose your language pairings
 					</h1>
@@ -225,7 +198,7 @@
 					</table>
 				</fieldset>
 				<fieldset class="step-3">
-					<legend>STEP 3</legend>
+					<!-- <legend>STEP 3</legend> -->
 					<h1 class="padded">
 						&#9314;&nbsp;Select your desired tone
 					</h1>
@@ -238,14 +211,6 @@
 						      		Frendly/Casual
 					      		</div>
 						    </label>
-					    	<!-- <label for="frendly-casual">
-					      		<input type="radio" checked id="frendly-casual" name="tone" value="Frendly/Casual">
-					      		<div class="button">
-					      			<img class="corner top-right" src="img/check.png">
-					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
-						      		Frendly/Casual
-					      		</div>
-						    </label> -->
 					    </li>
 					    <li class="padded">
 					    	<label for="corporate-pro" class="select-type">
@@ -255,14 +220,6 @@
 					      			Corporate/Pro
 					      		</div>
 						    </label>
-					    	<!-- <label for="corporate-pro">
-					      		<input type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
-					      		<div class="button">
-					      			<img class="corner top-right" src="img/check.png">
-					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
-					      			Corporate/Pro
-					      		</div>
-						    </label> -->
 					    </li>
 					    <li class="padded">
 					    	<label for="media-formal"  class="select-type">
@@ -272,19 +229,11 @@
 					      			Media/Formal
 					      		</div>
 						    </label>
-					    	<!-- <label for="media-formal">
-					      		<input type="radio" id="media-formal" name="tone" value="Media/Formal">
-					      		<div class="button">
-					      			<img class="corner top-right" src="img/check.png">
-					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
-					      			Media/Formal
-					      		</div>
-						    </label> -->
 					    </li>
 					</ul>
 				</fieldset>
 				<fieldset class="step-4">
-					<legend>STEP 4</legend>
+					<!-- <legend>STEP 4</legend> -->
 					<h1 class="padded">
 						&#9315;&nbsp;Tell us how urgent this job is
 					</h1>
@@ -298,7 +247,7 @@
 							</div>
 						</div>
 						<div class="box">
-							<legend>TIMELINE INFO</legend>
+							<!-- <legend>TIMELINE INFO</legend> -->
 							<h2>
 								<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
 								TIMELINE INFO
@@ -310,14 +259,14 @@
 					</div>
 				</fieldset>
 				<fieldset class="step-5">
-					<legend>STEP 5</legend>
+					<!-- <legend>STEP 5</legend> -->
 					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
 				</fieldset>
 			</section>
 			<section class="flex-container">
-				<legend>FINAL ACTIONS</legend>
+				<!-- <legend>FINAL ACTIONS</legend> -->
 				<label for="terms-checkbox">I agree to the Terms &amp; Conditions</label>
 				<input type="checkbox" checked id="terms-checkbox" name="terms-and-conditions" value="agreed">
 				<button type="button" class="button submit" id="place-order-button-2">
