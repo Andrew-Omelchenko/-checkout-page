@@ -90,11 +90,21 @@ small {
 
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
-    background: lightgray;
+    background: #eceef4;
+}
+
+header {
+	background: #eceef4;
+	color: #a5abc5;
+	padding: 42px 0;
+	align-content: center;
+	align-items: center;
 }
 
 form {
 	background: white;
+	border-radius: 3px;
+	border: 1px solid #c9d0e1;
 }
 
 h1 {
@@ -129,21 +139,33 @@ p {
 	float: right;
 }*/
 
+.logo {
+	max-width: 96px;
+}
+
 .center {
 	text-align: center;
 }
 
 .button {
 	height: 42px;
-	width: 121px;
+	width: 147px;
 	border: 1px solid gray;
-	border-radius: 5px;
+	border-radius: 3px;
 	font-weight: bold;
+	cursor: pointer;
+}
+
+.header-button {
+	background: #eceef4;
+	color: #a5abc5;
+	border: 1px solid #c9d0e1;
 }
 
 .submit {
 	color: white;
-	background: lightseagreen;
+	background: #5fcac6;
+	border: 1px solid #54aca9;
 }
 
 .image-radio {
