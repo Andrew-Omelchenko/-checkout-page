@@ -269,6 +269,26 @@
 					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
+					<div class="flex-container" style="width: 80%; justify-content: space-around;">
+				    	<label for="by-card" class="select-type" style="max-width: 25%;">
+				    		<input required hidden checked type="radio" id="by-card" name="payment-type" value="by-card">
+				    		<div class="select-wrapper center">
+				    			<img src="img/cards.png" class="select-img" style="max-width: 75%;">
+				    		</div>
+				    	</label>
+				    	<label for="by-paypal" class="select-type" style="max-width: 25%;">
+				    		<input required hidden type="radio" id="by-paypal" name="payment-type" value="by-paypal">
+				    		<div class="select-wrapper center">
+				    			<img src="img/paypal.png" class="select-img" style="max-width: 75%;">
+				    		</div>
+				    	</label>
+				    	<label for="by-amazon" class="select-type" style="max-width: 25%;">
+				    		<input required hidden type="radio" id="by-amazon" name="payment-type" value="by-amazon">
+				    		<div class="select-wrapper center">
+				    			<img src="img/amazon.png" class="select-img" style="max-width: 75%;">
+				    		</div>
+				    	</label>
+					</div>
 				</fieldset>
 			</section>
 			<section class="flex-end">
@@ -278,7 +298,7 @@
 				<button type="button" class="button submit right-tabbed" id="place-order-button-2">
 					PLACE ORDER
 				</button>
-				<button type="button" class="button right-tabbed" id="print-a-quote-button-2">
+				<button type="button" class="button form-button right-tabbed" id="print-a-quote-button-2">
 					PRINT A QUOTE
 				</button>
 			</section>
