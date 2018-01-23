@@ -269,29 +269,48 @@
 					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
-					<p class="tabbed" style="font-size: 12pt; padding-top: 21px; padding-bottom: 21px;">
+					<p class="caption tabbed" style="padding-top: 21px; padding-bottom: 21px;">
 						Already have an account with us? <a href="#">Sign In</a>.
                     </p>
                     <div class="flex-start tabbed">
                         <div>
-                            <p>
+                            <p class="caption">
                             	FULL NAME
                             </p>
-                            <input required id="full-name" type="text" name="full-name" value="Andrew Omelchenko">
+                            <input 
+                            	class="input-field" 
+                            	required id="full-name" 
+                            	type="text" 
+                            	name="full-name" 
+                            	value="Andrew A. Omelchenko"
+                            	title="Please enter your full name here">
                         </div>
                     </div>
                     <div class="flex-start tabbed">
                         <div>
-                            <p>
+                            <p class="caption">
                             	EMAIL ADDRESS
                             </p>
-                            <input required id="e-mail" type="e-mail" name="e-mail" value="andrewom43@gmail.com">
+                            <input 
+                            	class="input-field" 
+                            	required id="e-mail" 
+                            	type="e-mail" 
+                            	name="e-mail" 
+                            	value="andrewom43@gmail.com"
+                            	title="Enter valid e-mail address">
                         </div>
                         <div>
-                            <p>
+                            <p class="caption">
                             	CHOOSE A PASSWORD
                             </p>
-                            <input required id="psw" type="password" name="psw">
+                            <input 
+                            	class="input-field" 
+                            	required id="psw" 
+                            	type="password" 
+                            	name="psw" 
+                            	minlength="6"
+                            	placeholder="******"
+                            	title="Password should be at least 6 characters long">
                         </div>
                     </div>
 					<div class="flex-container tabbed" style="width: 70%; justify-content: space-between;">
@@ -314,24 +333,49 @@
 				    		</div>
 				    	</label>
 					</div>
-					<div class="flex-start tabbed">
+					<div class="flex-start tabbed" style="margin-top: 33px;">
                         <div>
-                            <p>
+                            <p class="caption">
                             	CARD NUMBER
                             </p>
-                            <input id="card-number" type="text" name="card-number" maxlength="16">
+                            <label for="card-number" class="card-number-wrapper">
+	                            <input 
+	                            	class="input-field-2 center"
+	                            	style="width: 273px;" 
+	                            	id="card-number" 
+	                            	type="text" 
+	                            	name="card-number" 
+	                            	maxlength="16"
+	                            	placeholder="################"
+	                            	pattern="[0-9]{16}"
+	                            	title="Enter 16-digit card number">
+                            </label>
                         </div>
                         <div>
-                            <p>
+                            <p class="caption">
                             	EXPIRY DATE
                             </p>
-                            <input id="expiry-date" type="text" name="expiry-date" placeholder="DD/MM/YY">
+                            <input 
+                            	class="input-field-2 center" 
+                            	id="expiry-date" 
+                            	type="text" 
+                            	name="expiry-date" 
+                            	placeholder="DD/MM/YY"
+                            	title="Enter your card's expiry date">
                         </div>
                         <div>
-                            <p>
+                            <p class="caption">
                             	CODE
                             </p>
-                            <input id="cvv" type="text" name="cvv" maxlength="3">
+                            <input 
+                            	class="input-field-2 center" 
+                            	id="cvv" 
+                            	type="password" 
+                            	name="cvv" 
+                            	maxlength="3"
+                            	placeholder="***"
+                            	title="Enter 3-digit CVV code here"
+                            	pattern="[0-9][0-9][0-9]">
                         </div>
                     </div>
 				</fieldset>

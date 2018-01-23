@@ -238,6 +238,34 @@ p {
 	color: #ffa500;
 }
 
+.caption {
+	font-size: 10pt;
+	font-weight: bold;
+	padding-left: 6px;
+}
+
+.input-field {
+	color: #6e768f;
+	height: 33px;
+	width: 210px;
+	border: 1px solid #6e768f;
+	border-radius: 3px;
+	font-size: 10pt;
+	font-weight: bold;
+	padding-left: 21px;
+	margin: 6px 33px 27px 0;
+}
+
+.input-field-2 {
+	color: #6e768f;
+	height: 33px;
+	border: 1px solid #6e768f;
+	border-radius: 3px;
+	font-size: 10pt;
+	font-weight: bold;
+	margin: 6px 33px 27px 0;
+}
+
 /* Styles for checked borders (new - from lecture) */
 
 .select-wrapper {
@@ -441,4 +469,20 @@ input[type="radio"]:unchecked + div {
 	margin: 10px 0;
 	text-align-last: center;
 	padding-right: 21px;   
+}
+
+/* Card issuer logo */
+
+.card-number-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.card-number-wrapper:after {
+	font-family: "FontAwesome";
+	content: "\f1f0";
+	font-size: 21pt;
+	position: absolute;
+	top: -5px;
+	right: 40px;
 }
