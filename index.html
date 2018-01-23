@@ -269,7 +269,32 @@
 					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
-					<div class="flex-container" style="width: 80%; justify-content: space-around;">
+					<p class="tabbed" style="font-size: 12pt; padding-top: 21px; padding-bottom: 21px;">
+						Already have an account with us? <a href="#">Sign In</a>.
+                    </p>
+                    <div class="flex-start tabbed">
+                        <div>
+                            <p>
+                            	FULL NAME
+                            </p>
+                            <input required id="full-name" type="text" name="full-name" value="Andrew Omelchenko">
+                        </div>
+                    </div>
+                    <div class="flex-start tabbed">
+                        <div>
+                            <p>
+                            	EMAIL ADDRESS
+                            </p>
+                            <input required id="e-mail" type="e-mail" name="e-mail" value="andrewom43@gmail.com">
+                        </div>
+                        <div>
+                            <p>
+                            	CHOOSE A PASSWORD
+                            </p>
+                            <input required id="psw" type="password" name="psw">
+                        </div>
+                    </div>
+					<div class="flex-container tabbed" style="width: 70%; justify-content: space-between;">
 				    	<label for="by-card" class="select-type" style="max-width: 25%;">
 				    		<input required hidden checked type="radio" id="by-card" name="payment-type" value="by-card">
 				    		<div class="select-wrapper center">
@@ -289,6 +314,26 @@
 				    		</div>
 				    	</label>
 					</div>
+					<div class="flex-start tabbed">
+                        <div>
+                            <p>
+                            	CARD NUMBER
+                            </p>
+                            <input id="card-number" type="text" name="card-number" maxlength="16">
+                        </div>
+                        <div>
+                            <p>
+                            	EXPIRY DATE
+                            </p>
+                            <input id="expiry-date" type="text" name="expiry-date" placeholder="DD/MM/YY">
+                        </div>
+                        <div>
+                            <p>
+                            	CODE
+                            </p>
+                            <input id="cvv" type="text" name="cvv" maxlength="3">
+                        </div>
+                    </div>
 				</fieldset>
 			</section>
 			<section class="flex-end">
