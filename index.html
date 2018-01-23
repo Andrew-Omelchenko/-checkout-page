@@ -153,15 +153,17 @@
 					<h1 class="padded">
 						&#9313;&nbsp;Choose your language pairings
 					</h1>
-					<table id="fictive-table" class="tabbed" style="text-align: left;">
+					<table id="fictive-table" class="tabbed" style="text-align: left; width: 50%;">
 						<tr>
 							<th style="text-align: right;">FROM</th>
 							<th>
-								<select>
-									<option>English</option>
-									<option>Arabic</option>
-									<option>Kurdish</option>
-								</select>
+								<label for="from-lang" class="select-wrapper-2">
+									<select name="from-lang" id="from-lang" class="select-hidden">
+										<option>English</option>
+										<option>Arabic</option>
+										<option>Kurdish</option>
+									</select>
+								</label>
 							</th>
 							<th></th>
 							<th></th>
@@ -170,26 +172,30 @@
 						<tr>
 							<th style="text-align: right;">TO</th>
 							<th>
-								<select>
-									<option>Arabic</option>
-									<option>English</option>
-									<option>Kurdish</option>
-								</select>
+								<label for="to-lang" class="select-wrapper-2">
+									<select name="to-lang" id="to-lang" class="select-hidden">
+										<option>Arabic</option>
+										<option>English</option>
+										<option>Kurdish</option>
+									</select>
+								</label>
 							</th>
 							<th>
-								<select>
-									<option>Kurdish</option>
-									<option>English</option>
-									<option>Arabic</option>
-								</select>
+								<label for="add-lang" class="select-wrapper-2">
+									<select name="add-lang" id="add-lang" class="select-hidden">
+										<option>Kurdish</option>
+										<option>English</option>
+										<option>Arabic</option>
+									</select>
+								</label>
 							</th>
 							<th>
-								<p>
+								<p style="font-weight: bold; font-size: 14pt;">
 									<i class="fa fa-trash fa-fw" aria-hidden="true"></i>
 								</p>
 							</th>
 							<th>
-								<button>
+								<button class="add-button">
 									<i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;
 									ADD
 								</button>

@@ -192,6 +192,19 @@ p {
 	border: 1px solid #54aca9;
 }
 
+.add-button {
+	height: 42px;
+	width: 105px;
+	color: #6e768f;
+	background: #f7f7fa;
+	border: 1px solid #6e768f;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 10px 0;
+	text-align-last: center;
+}
+
 .image-radio {
 	width: 20%;
 }
@@ -391,4 +404,42 @@ input[type="radio"]:checked + div {
 input[type="radio"]:unchecked + div {
 	position: relative;
 	border: 5px solid transparent;
+}
+
+/* Selector styles */
+
+.select-wrapper-2 {
+	position: relative;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 1px solid c9d0e1;
+}
+
+.select-wrapper-2:after {
+	font-family: "FontAwesome";
+	content: "\f0d7";
+	position: absolute;
+	top: -11px;
+	right: 12px;
+	height: 30px;
+	padding: 12px 0px 0px 11px;
+	border-left: 1px solid #6e768f;
+	pointer-events: none;
+}
+
+.select-hidden {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	height: 42px;
+	width: 147px;
+	color: #6e768f;
+	background: #f7f7fa;
+	border: 1px solid #6e768f;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 10px 0;
+	text-align-last: center;
+	padding-right: 21px;   
 }
