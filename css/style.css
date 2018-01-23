@@ -6,6 +6,20 @@
 	align-items: center;
 }
 
+.flex-start {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-end {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 legend{
 	/*margin-bottom:-10px;*/
 	width: 1px;
@@ -157,6 +171,7 @@ p {
 	border-radius: 3px;
 	font-weight: bold;
 	cursor: pointer;
+	margin: 10px 0;
 }
 
 .header-button {
@@ -191,6 +206,10 @@ p {
 
 .tabbed {
 	margin-left: 42px;
+}
+
+.right-tabbed {
+	margin-right: 20px;
 }
 
 .box {
