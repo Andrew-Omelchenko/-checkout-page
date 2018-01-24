@@ -15,13 +15,13 @@
 				<i class="fa fa-long-arrow-left fa-fw" aria-hidden="true"></i>&nbsp;
 				GO BACK
 			</button>
-			<img src="img/logo.png" alt="" class="logo">
+			<img src="img/logo.png" alt="Logo" class="logo">
 			<button type="button" id="sign-in-button" class="button header-button">
 				<i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
 				SIGN IN
 			</button>
 		</header>
-		<form action="" method="post">
+		<form action="php/handler.php" method="post">
 			<section class="flex-container">
 				<!-- <legend>YOUR ORDER</legend> -->
 					<fieldset class="summary">
@@ -83,7 +83,7 @@
 					    		<input required hidden type="radio" id="website" name="trans-type" value="Website">
 					    		<div class="select-wrapper center">
 					    			<p></p>
-					    			<img src="img/website.png" class="select-img tile">
+					    			<img src="img/website.png" alt="Website" class="select-img tile">
 					    			<p>Website</p>
 					    		</div>
 					    	</label>
@@ -93,7 +93,7 @@
 					    		<input required hidden checked type="radio" id="documents" name="trans-type" value="Documents">
 					    		<div class="select-wrapper center">
 					    			<p></p>
-					    			<img src="img/documents.png" class="select-img tile">
+					    			<img src="img/documents.png" alt="Documents" class="select-img tile">
 					    			<p>Documents</p>
 					    		</div>
 					    	</label>
@@ -103,7 +103,7 @@
 					    		<input required hidden type="radio" id="social-account" name="trans-type" value="Social Account">
 					    		<div class="select-wrapper center">
 					    			<p></p>
-					    			<img src="img/social-account.png" class="select-img tile">
+					    			<img src="img/social-account.png" alt="Social Account" class="select-img tile">
 					    			<p>Social Account</p>
 					    		</div>
 					    	</label>
@@ -249,7 +249,7 @@
 					<div style="display: flex; flex-flow: row wrap; justify-content: space-around;">
 						<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 80%;">
 							<div class="padded" style="width: 100%;">
-								<input required type="range" name="urgency" id="urgency" min=0 max=2 step=1 value=1>
+								<input type="range" name="urgency" id="urgency" min=0 max=2 step=1 value=1>
 							</div>
 							<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 100%; padding-bottom: 20px;">
 								<span>I GOT TIME</span><span class="orange">AVERAGE</span><span>YESTERDAY</span>
@@ -298,7 +298,7 @@
                             <input 
                             	class="input-field" 
                             	required id="e-mail" 
-                            	type="e-mail" 
+                            	type="email" 
                             	name="e-mail" 
                             	value="andrewom43@gmail.com"
                             	title="Enter valid e-mail address">
@@ -323,19 +323,19 @@
 				    	<label for="by-card" class="select-type" style="max-width: 25%;">
 				    		<input required hidden checked type="radio" id="by-card" name="payment-type" value="by-card">
 				    		<div class="select-wrapper center">
-				    			<img src="img/cards.png" class="select-img" style="max-width: 75%;">
+				    			<img src="img/cards.png" alt="Cards" class="select-img" style="max-width: 75%;">
 				    		</div>
 				    	</label>
 				    	<label for="by-paypal" class="select-type" style="max-width: 25%;">
 				    		<input required hidden type="radio" id="by-paypal" name="payment-type" value="by-paypal">
 				    		<div class="select-wrapper center">
-				    			<img src="img/paypal.png" class="select-img" style="max-width: 75%;">
+				    			<img src="img/paypal.png" alt="PayPal" class="select-img" style="max-width: 75%;">
 				    		</div>
 				    	</label>
 				    	<label for="by-amazon" class="select-type" style="max-width: 25%;">
 				    		<input required hidden type="radio" id="by-amazon" name="payment-type" value="by-amazon">
 				    		<div class="select-wrapper center">
-				    			<img src="img/amazon.png" class="select-img" style="max-width: 75%;">
+				    			<img src="img/amazon.png" alt="Amazon" class="select-img" style="max-width: 75%;">
 				    		</div>
 				    	</label>
 					</div>
