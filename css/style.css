@@ -486,3 +486,34 @@ input[type="radio"]:unchecked + div {
 	top: -5px;
 	right: 40px;
 }
+
+/* Validation marks */
+
+input:not([type="radio"])+label{
+    position: relative;
+    display: block;
+}
+
+#full-name:valid+label:before,
+#e-mail:valid+label:before,
+#psw:valid+label:before {
+    font-family: "FontAwesome";
+	content: "\f058";
+	color: #76a7e1;
+	font-size: 21pt;
+	position: absolute;
+	top: -60px;
+	right: 40px;
+}
+
+#full-name:invalid+label:before,
+#e-mail:invalid+label:before,
+#psw:invalid+label:before {
+    font-family: "FontAwesome";
+	content: "\f057"; /* fa-times-cicle */
+	color: #e17776;
+	font-size: 21pt;
+	position: absolute;
+	top: -60px;
+	right: 40px;
+}
