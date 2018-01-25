@@ -37,7 +37,7 @@ small {
 
 
 @media screen and (max-width: 1023px) {
-	header, form, footer {
+	header, form {
 		width: 1024px;
 	}
 	.summary {
@@ -67,10 +67,13 @@ small {
 	.step-5 {
 		width: 100%;
 	}
+	.main-footer section {
+		width: 1024px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-	header, form, footer {
+	header, form {
 		width: 1024px;
 		margin-left: auto;
 		margin-right: auto;
@@ -102,6 +105,11 @@ small {
 	.step-5 {
 		width: 100%;
 	}
+	.main-footer section {
+		width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 body {
@@ -120,6 +128,7 @@ form {
 	color: #6e768f;
 	border-radius: 3px;
 	border: 1px solid #c9d0e1;
+	margin-bottom: 84px;
 }
 
 h1 {
@@ -155,8 +164,8 @@ p {
 }*/
 
 .logo {
-	max-width: 96px;
-	max-height: 96px;
+	width: 96px;
+	height: 90px;
 }
 
 .center {
@@ -269,8 +278,16 @@ p {
 	padding-bottom: 21px;
 }
 
+.less-bottom-padded {
+	padding-bottom: 8px;
+}
+
 .tabbed {
 	margin-left: 42px;
+}
+
+.tabbed-less {
+	margin-left: 30px;
 }
 
 .justified {
@@ -331,6 +348,10 @@ p {
 	width: 273px;
 }
 
+.one-fifth-width {
+	max-width: 20%;
+}
+
 .quartered {
 	max-width: 25%;
 }
@@ -353,6 +374,18 @@ p {
 
 .with-top-margin {
 	margin-top: 33px;
+}
+
+.main-footer {
+	background: #444a62;
+	color: #ccc6ea;
+	font-weight: bold;
+	padding-top: 63px;
+	padding-bottom: 63px;
+}
+
+.main-footer p, address, li {
+	font-size: 8pt;
 }
 
 /* Styles for checked borders (new - from lecture) */
