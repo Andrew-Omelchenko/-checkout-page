@@ -54,16 +54,16 @@
 						PRINT A QUOTE
 					</button>
 				</fieldset>
-				<fieldset class="help-center" style="border-left: 1px solid #6e768f">
+				<fieldset class="help-center">
 					<!-- <legend>HELP CENTER</legend> -->
 					<h1 class="padded">
 						<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i>&nbsp;
 						HELP CENTER
 					</h1>
-					<p class="padded tabbed" style="text-align: justify;">
+					<p class="padded tabbed justified">
 						If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.
 					</p>
-					<address class="padded tabbed" style="color: #6e768f; font-size: 10pt; font-weight: bold; ">
+					<address class="address padded tabbed">
 						<!-- <a href="tel:+971(0)555 555">+971(0)555 555</a>
 						<a href="mailto:help@qtest.com">help@qtest.com</a> -->
 						<span>+971(0)555 555</span>
@@ -72,12 +72,12 @@
 					</address>
 				</fieldset>
 			</section>
-			<section class="flex-container" style="border-top: 1px solid #6e768f">
+			<section class="flex-container">
 				<!-- <legend>ACTIONS STEP BY STEP</legend> -->
 				<fieldset class="step-by-step">
 					<!-- <legend>SELECT WHAT YOU WANT TO TRANSLATE</legend> -->
-					<h1 class="center padded" style="margin-bottom: 20px; text-decoration: underline;">SELECT WHAT YOU WANT TO TRANSLATE</h1>
-					<div class="flex-container" style="justify-content: space-around;">
+					<h1 class="center padded">SELECT WHAT YOU WANT TO TRANSLATE</h1>
+					<div class="flex-container spaced-around">
 					    <div class="image-radio">
 					    	<label for="website" class="select-type">
 					    		<input required hidden type="radio" id="website" name="trans-type" value="Website">
@@ -116,7 +116,7 @@
 						&#9312;&nbsp;<span>Upload your documents</span>&nbsp;<span><small>(Doc, Docx, Text, PDF, Markdown)</small></span>
 					</h1>
 					<label for="upload-button" class="upload-wrapper button form-button tabbed">
-						<input type="file" id="upload-button" name="upload-button" style="margin-bottom: 20px;" accept=".doc, .docx, .txt, .pdf, .md">
+						<input type="file" id="upload-button" name="upload-button" accept=".doc, .docx, .txt, .pdf, .md">
                         <i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>&nbsp;
                         Upload a new file 
                     </label>
@@ -156,9 +156,9 @@
 					<h1 class="padded">
 						&#9313;&nbsp;Choose your language pairings
 					</h1>
-					<table id="fictive-table" class="tabbed" style="text-align: left; width: 50%;">
+					<table id="fictive-table" class="fictive-table tabbed">
 						<tr>
-							<th style="text-align: right;">FROM</th>
+							<th class="right-justified">FROM</th>
 							<th>
 								<label for="from-lang" class="select-wrapper-2">
 									<select name="from-lang" id="from-lang" class="select-hidden">
@@ -173,7 +173,7 @@
 							<th></th>
 						</tr>
 						<tr>
-							<th style="text-align: right;">TO</th>
+							<th class="right-justified">TO</th>
 							<th>
 								<label for="to-lang" class="select-wrapper-2">
 									<select name="to-lang" id="to-lang" class="select-hidden">
@@ -193,7 +193,7 @@
 								</label>
 							</th>
 							<th>
-								<p style="font-weight: bold; font-size: 14pt;">
+								<p class="trash-icon">
 									<i class="fa fa-trash fa-fw" aria-hidden="true"></i>
 								</p>
 							</th>
@@ -211,11 +211,11 @@
 					<h1 class="padded">
 						&#9314;&nbsp;Select your desired tone
 					</h1>
-					<ul class="tabbed" style="list-style: none;">
+					<ul class="tabbed dots-hidden">
 					    <li class="padded">
 					    	<label for="frendly-casual" class="select-type">
 					      		<input required hidden checked type="radio" id="frendly-casual" name="tone" value="Frendly/Casual">
-					      		<div class="select-wrapper" style="padding: 14px;">
+					      		<div class="select-wrapper padded-more">
 					      			<i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;
 						      		Frendly/Casual
 					      		</div>
@@ -224,7 +224,7 @@
 					    <li class="padded">
 					    	<label for="corporate-pro" class="select-type">
 					      		<input required hidden type="radio" id="corporate-pro" name="tone" value="Corporate/Pro">
-					      		<div class="select-wrapper" style="padding: 14px;">
+					      		<div class="select-wrapper padded-more">
 					      			<i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Corporate/Pro
 					      		</div>
@@ -233,7 +233,7 @@
 					    <li class="padded">
 					    	<label for="media-formal"  class="select-type">
 					      		<input required hidden type="radio" id="media-formal" name="tone" value="Media/Formal">
-					      		<div class="select-wrapper" style="padding: 14px;">
+					      		<div class="select-wrapper padded-more">
 					      			<i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;
 					      			Media/Formal
 					      		</div>
@@ -246,12 +246,12 @@
 					<h1 class="padded">
 						&#9315;&nbsp;Tell us how urgent this job is
 					</h1>
-					<div style="display: flex; flex-flow: row wrap; justify-content: space-around;">
-						<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 80%;">
-							<div class="padded" style="width: 100%;">
+					<div class="flex-container spaced-around">
+						<div class="flex-container four-fifth-width">
+							<div class="full-width padded">
 								<input type="range" name="urgency" id="urgency" min=0 max=2 step=1 value=1>
 							</div>
-							<div style="display: flex; flex-flow: row wrap; justify-content: space-between; width: 100%; padding-bottom: 20px;">
+							<div class="flex-container full-width bottom-padded">
 								<span>I GOT TIME</span><span class="orange">AVERAGE</span><span>YESTERDAY</span>
 							</div>
 						</div>
@@ -261,7 +261,7 @@
 								<i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>&nbsp;
 								TIMELINE INFO
 							</h2>
-							<p style="text-align: justify;">
+							<p class="justified">
 								With an <span class="orange">AVERAGE</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation
 							</p>
 						</div>
@@ -272,7 +272,7 @@
 					<h1 class="padded">
 						&#9316;&nbsp;Sign up and choose a payment method
 					</h1>
-					<p class="caption tabbed" style="padding-top: 21px; padding-bottom: 21px;">
+					<p class="caption tabbed top-padded bottom-padded">
 						Already have an account with us? <a href="#">Sign In</a>.
                     </p>
                     <div class="flex-start tabbed">
@@ -319,35 +319,34 @@
                         	<label for="psw"></label>
                         </div>
                     </div>
-					<div class="flex-container tabbed" style="width: 70%; justify-content: space-between;">
-				    	<label for="by-card" class="select-type" style="max-width: 25%;">
+					<div class="flex-container spaced-between tabbed seven-tenth-width">
+				    	<label for="by-card" class="select-type quartered">
 				    		<input required hidden checked type="radio" id="by-card" name="payment-type" value="by-card">
 				    		<div class="select-wrapper center">
-				    			<img src="img/cards.png" alt="Cards" class="select-img" style="max-width: 75%;">
+				    			<img src="img/cards.png" alt="Cards" class="select-img three-times-quartered">
 				    		</div>
 				    	</label>
-				    	<label for="by-paypal" class="select-type" style="max-width: 25%;">
+				    	<label for="by-paypal" class="select-type quartered">
 				    		<input required hidden type="radio" id="by-paypal" name="payment-type" value="by-paypal">
 				    		<div class="select-wrapper center">
-				    			<img src="img/paypal.png" alt="PayPal" class="select-img" style="max-width: 75%;">
+				    			<img src="img/paypal.png" alt="PayPal" class="select-img three-times-quartered">
 				    		</div>
 				    	</label>
-				    	<label for="by-amazon" class="select-type" style="max-width: 25%;">
+				    	<label for="by-amazon" class="select-type quartered">
 				    		<input required hidden type="radio" id="by-amazon" name="payment-type" value="by-amazon">
 				    		<div class="select-wrapper center">
-				    			<img src="img/amazon.png" alt="Amazon" class="select-img" style="max-width: 75%;">
+				    			<img src="img/amazon.png" alt="Amazon" class="select-img three-times-quartered">
 				    		</div>
 				    	</label>
 					</div>
-					<div class="flex-start tabbed" style="margin-top: 33px;">
+					<div class="flex-start tabbed with-top-margin">
                         <div>
                             <p class="caption">
                             	CARD NUMBER
                             </p>
                             <label for="card-number" class="card-number-wrapper">
 	                            <input 
-	                            	class="input-field-2 center"
-	                            	style="width: 273px;" 
+	                            	class="input-field-2 wide center"
 	                            	id="card-number" 
 	                            	type="text" 
 	                            	name="card-number" 

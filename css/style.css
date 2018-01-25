@@ -191,6 +191,43 @@ p {
 	border: 1px solid #54aca9;
 }
 
+.help-center {
+	border-left: 1px solid #6e768f;
+}
+
+.address {
+	color: #6e768f;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.step-by-step {
+	border-top: 1px solid #6e768f;
+}
+
+.step-by-step + h1 {
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.spaced-around {
+	justify-content: space-around;
+}
+
+.fictive-table {
+	text-align: left;
+	width: 50%;
+}
+
+.trash-icon {
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.dots-hidden {
+	list-style: none;
+}
+
 .add-button {
 	height: 42px;
 	width: 105px;
@@ -202,6 +239,10 @@ p {
 	cursor: pointer;
 	margin: 10px 0;
 	text-align-last: center;
+}
+
+#upload-button {
+	margin-bottom: 20px;
 }
 
 .image-radio {
@@ -216,8 +257,28 @@ p {
 	padding: 10px;
 }
 
+.padded-more {
+	padding: 14px;
+}
+
+.top-padded {
+	padding-top: 21px;
+}
+
+.bottom-padded {
+	padding-bottom: 21px;
+}
+
 .tabbed {
 	margin-left: 42px;
+}
+
+.justified {
+	text-align: justify;
+}
+
+.right-justified {
+	text-align: right;
 }
 
 .right-tabbed {
@@ -264,6 +325,34 @@ p {
 	font-size: 10pt;
 	font-weight: bold;
 	margin: 6px 33px 27px 0;
+}
+
+.wide {
+	width: 273px;
+}
+
+.quartered {
+	max-width: 25%;
+}
+
+.three-times-quartered {
+	max-width: 75%;
+}
+
+.seven-tenth-width {
+	width: 70%;
+}
+
+.four-fifth-width {
+	width: 80%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.with-top-margin {
+	margin-top: 33px;
 }
 
 /* Styles for checked borders (new - from lecture) */
