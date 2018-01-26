@@ -37,7 +37,7 @@ small {
 
 
 @media screen and (max-width: 1023px) {
-	header, form {
+	header, form, footer {
 		width: 1024px;
 	}
 	.summary {
@@ -171,14 +171,6 @@ th {
 p {
 	font-size: 9pt;
 }
-
-/*#go-back-button {
-	float: left;
-}
-
-#sign-in-button {
-	float: right;
-}*/
 
 .logo {
 	width: 96px;
