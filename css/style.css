@@ -67,7 +67,7 @@ small {
 	.step-5 {
 		width: 100%;
 	}
-	.main-footer section {
+	.main-footer .footer-body {
 		width: 1024px;
 		background: #444a62;
 		margin-top: 0;
@@ -108,7 +108,7 @@ small {
 	.step-5 {
 		width: 100%;
 	}
-	.main-footer section {
+	.main-footer .footer-body {
 		width: 1024px;
 		margin-left: auto;
 		margin-right: auto;
