@@ -69,6 +69,7 @@ small {
 	}
 	.main-footer section {
 		width: 1024px;
+		background: #444a62;
 	}
 }
 
@@ -109,6 +110,7 @@ small {
 		width: 1024px;
 		margin-left: auto;
 		margin-right: auto;
+		background: #444a62;
 	}
 }
 
@@ -131,8 +133,17 @@ form {
 	margin-bottom: 84px;
 }
 
+footer {
+	width: 100%;
+}
+
 h1 {
 	font-size: 18pt;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 11pt;
 	font-weight: bold;
 }
 
