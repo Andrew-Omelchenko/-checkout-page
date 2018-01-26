@@ -70,6 +70,8 @@ small {
 	.main-footer section {
 		width: 1024px;
 		background: #444a62;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
 
@@ -111,6 +113,8 @@ small {
 		margin-left: auto;
 		margin-right: auto;
 		background: #444a62;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
 
@@ -135,6 +139,8 @@ form {
 
 footer {
 	width: 100%;
+	padding-top: 63px;
+	padding-bottom: 63px;
 }
 
 h1 {
@@ -391,8 +397,6 @@ p {
 	background: #444a62;
 	color: #ccc6ea;
 	font-weight: bold;
-	padding-top: 63px;
-	padding-bottom: 63px;
 }
 
 .main-footer p, address, li {
